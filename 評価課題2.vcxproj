@@ -97,6 +97,7 @@
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\WinApp.cpp" />
     <ClCompile Include="C:\KamataEngine\DirectXGame\scene\GameScene.cpp" />
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp" />
+    <ClCompile Include="EnemyBase.cpp" />
     <ClCompile Include="include\BulletBase.cpp" />
     <ClCompile Include="include\Camera.cpp" />
     <ClCompile Include="include\CircleCollider.cpp" />
@@ -114,6 +115,7 @@
     <ClCompile Include="include\SceneManager.cpp" />
     <ClCompile Include="include\TitleScene.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NormalEnemy.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\DirectXGame\math\MathUtility.h" />
@@ -142,6 +144,7 @@
     <ClInclude Include="C:\KamataEngine\DirectXGame\input\Input.h" />
     <ClInclude Include="C:\KamataEngine\DirectXGame\scene\GameScene.h" />
     <ClInclude Include="C:\KamataEngine\Adapter\Novice.h" />
+    <ClInclude Include="EnemyBase.h" />
     <ClInclude Include="include\BulletBase.h" />
     <ClInclude Include="include\CircleCollider.h" />
     <ClInclude Include="include\ColliderBase.h" />
@@ -162,6 +165,7 @@
     <ClInclude Include="include\MyMath.h" />
     <ClInclude Include="include\Random.h" />
     <ClInclude Include="include\Vector2Math.h" />
+    <ClInclude Include="NormalEnemy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -9,6 +9,8 @@ const char kWindowTitle[] = "学籍番号";
 const int kWindowWidth = 1280;
 const int kWindowHeight = 720;
 
+#include "TextureManager.h"
+
 // Windowsアプリでのエントリーポイント(main関数)
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	SrandFromTime();
@@ -21,7 +23,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	auto scene = SceneManager::GetInstance();
 	scene->Initalize(kWindowWidth, kWindowHeight);
 
-
+	
 	// ウィンドウの×ボタンが押されるまでループ
 	while (Novice::ProcessMessage() == 0) {
 		// フレームの開始
@@ -29,6 +31,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		
 		scene->Update();
 		
+		Novice::DrawBox(0, 0, 1280, 720, 0.0f, WHITE, kFillModeSolid);
 		Novice::DrawBox(0, 0, 340, 720, 0.0f, BLACK, kFillModeSolid);
 		Novice::DrawBox(0 + 940, 0, 340, 720, 0.0f, BLACK, kFillModeSolid);
 		scene->Draw();

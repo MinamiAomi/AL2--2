@@ -77,6 +77,18 @@
     <Filter Include="Game\Resource">
       <UniqueIdentifier>{a8566189-b933-4c12-88ba-25e30c070b32}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game\Bullet\Manager">
+      <UniqueIdentifier>{ae435b5b-1f04-469d-86bf-00be5820fd22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Enemy">
+      <UniqueIdentifier>{1b1f2fe3-7266-4a67-a993-2f0fb9ce5eac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Enemy\Base">
+      <UniqueIdentifier>{dadebc9f-203e-43be-bec8-c5b9319556fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Enemy\Normal">
+      <UniqueIdentifier>{89a0b2ee-c5eb-4795-9e12-41cc45611f05}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\DirectXCommon.cpp">
@@ -142,6 +154,12 @@
     </ClCompile>
     <ClCompile Include="include\Quad.cpp">
       <Filter>Template\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBase.cpp">
+      <Filter>Game\Enemy\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalEnemy.cpp">
+      <Filter>KamataEngine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -283,5 +301,9 @@
     <ClInclude Include="include\Quad.h">
       <Filter>Template\Include</Filter>
     </ClInclude>
+    <ClInclude Include="EnemyBase.h">
+      <Filter>Game\Enemy\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalEnemy.h" />
   </ItemGroup>
 </Project>
